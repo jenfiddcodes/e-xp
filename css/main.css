@@ -313,7 +313,7 @@ textarea {
      border-radius: 5px;
      background-color:#dcd2ff;
      color: #18132b;
-     font-size: 1.25em;
+     font-size: 1.5em;
      font-family: 'nexa_boldregular';
      transition: all 0.5s ease;
      -webkit-transition: all 0.5s ease;
@@ -323,7 +323,7 @@ textarea {
    }
 
    .ctabtn{
-     padding: 10px 25px;
+     padding: 20px 25px;
    }
    .ctabtnmobile{
      padding: 10px 65px;
@@ -381,7 +381,7 @@ textarea {
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
-     margin: 100px 0 50px 0;
+     margin: 50px 0;
    }
 
    .aboutcontent{
@@ -389,7 +389,7 @@ textarea {
    }
 
    .aboutcontent h1{
-     font-size: 3em;
+     font-size: 2em;
      text-align: center;
      margin-bottom: 50px;
    }
@@ -403,6 +403,10 @@ textarea {
      font-family: 'nexa_boldregular';
      margin-bottom: 10px;
      font-size: 2.25em;
+   }
+
+   .aboutbuttons{
+     margin-top: 50px;
    }
 
    .img-group{
@@ -641,11 +645,12 @@ textarea {
      }
 
      .signupbtnnav{
+       font-weight: bold;
        border: none;
        border-radius: 5px;
        background-color:#dcd2ff;
        color: #18132b;
-       padding: 5px 10px;
+       padding: 10px 15px;
        transition: all 0.25s ease;
        -webkit-transition: all 0.25s ease;
        -moz-transition: all 0.25s ease;
@@ -726,14 +731,15 @@ textarea {
        margin-bottom: 50px;
        }
 
-     .ctabtn a{
+     .ctabtn{
        background-color: #18132b;
        color: #dcd2ff;
        border: 2px solid #dcd2ff;
-       padding: 10px 25px;
+       padding: 25px 50px;
+       font-size: 1.75em;
      }
 
-     .ctabtn a:hover{
+     .ctabtn:hover{
        background-color:#dcd2ff;
        color: #18132b;
        opacity: 0.8;
@@ -761,6 +767,7 @@ textarea {
    }
 
    .aboutcontent h1{
+     font-size: 2.5em;
      width: 100%;
    }
 
