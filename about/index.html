@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html class="no-js" lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+    <meta name="description" content="E-XP is an employment oriented social network where you can sieze opportunities and gain experience as you go.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>E-XP</title>
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/text.css">
-    <script src="https://kit.fontawesome.com/2b2b1263ed.js" crossorigin="anonymous"></script>
-    <!------------------------Google Fonts--------------------------->
+    <meta name="theme-color" content="#fafafa">
+        <!------------------------Google Fonts--------------------------->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fauna+One|Wallpoet&display=swap" rel="stylesheet">
   </head>
@@ -22,14 +26,14 @@
         <nav>
         <ul>
           <!--<li><a href="#profile">Profile</a></li> angel said to hold off on this option-->
-          <li><a href="#about">About</a></li>
+          <li><a href="../about/index.html">About</a></li>
           <li><a href="#support">Support</a></li>
         </ul>
       </nav>
       <div class="rightnav">
         <ul>
           <li class="login"><a href="">Log In</a></li>
-          <li class="signupbtn"><a href="">Sign Up</a></li>
+          <li><button class="signupbtnnav" onclick="document.getElementById('id01').style.display='inline'">Sign Up</button></li>
         </ul>
       </div>
      </div>
@@ -68,6 +72,23 @@
       </div>
    </section>
 
+   <!--<section class="team">
+      <div class="teamwrapper">
+        <h1>THE<strong> TEAM </strong></h1>
+        <div class="img-group">
+          <figure>
+            <img src="../img/team2.jpg" alt="">
+          </figure>
+          <figure>
+            <img src="../img/team1.jpg" alt="">
+          </figure>
+          <figure>
+            <img src="../img/team3.jpg" alt="">
+          </figure>
+        </div>
+      </div>
+   </section>-->
+
    <section class="social">
      <h3 class="socialheader"> FOLLOW US</h3>
      <div class="socialicons">
@@ -86,5 +107,17 @@
      <p>Copyright &copy; 2019. All rights reserved.</p>
   </footer>
 
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <script src="https://kit.fontawesome.com/2b2b1263ed.js" crossorigin="anonymous"></script>
 </body>
 </html>

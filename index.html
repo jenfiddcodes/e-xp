@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html class="no-js" lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+    <meta name="description" content="E-XP is an employment oriented social network where you can sieze opportunities and gain experience as you go.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>E-XP</title>
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/text.css">
-    <script src="https://kit.fontawesome.com/2b2b1263ed.js" crossorigin="anonymous"></script>
-
-
-
-    <!------------------------Google Fonts--------------------------->
+    <meta name="theme-color" content="#fafafa">
+        <!------------------------Google Fonts--------------------------->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fauna+One|Wallpoet&display=swap" rel="stylesheet">
   </head>
@@ -32,7 +33,7 @@
       <div class="rightnav">
         <ul>
           <li class="login"><a href="">Log In</a></li>
-          <li><button class="signupbtn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button></li>
+          <li><button class="signupbtnnav" onclick="document.getElementById('id01').style.display='inline'">Sign Up</button></li>
         </ul>
       </div>
      </div>
@@ -69,18 +70,17 @@
   </form>
 </div>
 <!--END--------------------------------------------------------------->
-
 <main>
   <!------------------------faded logo bg?-------------------------
    <div class="bgimage"><p>X</p></div>-->
-
   <!------------------------WELCOME--------------------------->
    <section class="welcome">
-     <div class="sectionwrapper">
+     <div class="welcomewrapper">
        <div class="welcomecontent">
          <h3>GRIND TO<strong> YOUR </strong> HIGHEST LEVEL</h3>
-         <h1>WELCOME TO E-XP</h1>
-         <p>E-XP is an employment oriented social network<br> where you can sieze opportunities and gain experience as you go.</p>
+         <h2>WELCOME TO</h2>
+         <h1>E-XP</h1>
+         <p>E-XP is an employment oriented social network <br> where you can sieze opportunities<br> and gain experience as you go.</p>
          <div class="buttons">
            <button class="ctabtn" type="button" onclick="">GET STARTED</button> <br>
            <button class="ctabtnmobile" type="button" onclick="">Log In</button><!--for mobile version only-->
@@ -90,18 +90,27 @@
       </div>
    </section>
 </main>
-
-
 <!------------------------FOOTER--------------------------->
    <footer>
      <p>Copyright &copy; 2019. All rights reserved.</p>
   </footer>
 
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
 
-<!------------------------JS for the sign up form--------------------------->  <script>
+<!------------------------JS for the sign up form--------------------------->
+<script>
 // Get the modal
 var modal = document.getElementById('id01');
-
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
@@ -109,6 +118,8 @@ window.onclick = function(event) {
   }
 }
 </script>
+
+<script src="https://kit.fontawesome.com/2b2b1263ed.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
