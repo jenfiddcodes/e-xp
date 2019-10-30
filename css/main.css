@@ -1,0 +1,553 @@
+/************GLOBAL STYLES************/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+
+body{
+  color: #dcd2ff;
+  background: #18132b;
+  font-size: 16px;
+  font-family: 'nexa_lightregular', sans-serif;
+  letter-spacing: 1.5px;
+}
+
+
+a {
+  color: #dcd2ff;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* =========================SIGN UP FORM STYLES==================================== */
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* =========================END - SIGN UP FORM STYLES==================================== */
+
+
+
+/* =======MOBILE FIRST======================*/
+
+/************HEADER************/
+header{
+  /*background: #18132b;*/
+  background: #353054;
+  width: 100%;
+  padding: 5px 0;
+}
+
+.headerwrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+
+.logo {
+  font-size: 8em;
+  font-family: 'Wallpoet', cursive;
+  margin: 0;
+}
+
+nav {
+  display: none;
+}
+.rightnav ul {
+  display: none;
+}
+
+.rightnav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.rightnav ul li {
+  padding: 0 25px;
+  display: inline;
+}
+
+
+.signupbtn{
+  border: none;
+  border-radius: 5px;
+  background-color:#dcd2ff;
+  color: #18132b;
+  padding: 5px 10px;
+  transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.signupbtn:hover{
+  opacity: 0.8;
+ }
+
+.bgimage p{
+  display: none;
+}
+
+/************FOOTER************/
+footer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 25px 0;
+}
+
+footer p{
+  font-size: .75em;
+  width: 100%;
+  text-align: center;
+}
+
+/************WELCOME************/
+.sectionwrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+  margin: 50px auto;
+}
+
+.welcomecontent{
+  width: 80%;
+}
+
+.welcomecontent h3{
+  font-size: 1em;
+  text-align: center;
+  font-weight: 300;
+ }
+
+ strong {
+   font-family: 'nexa_boldregular';
+ }
+
+.welcomecontent h1{
+  font-size: 4.5em;
+  line-height: 1em;
+  font-family: 'nexa_boldregular';
+  text-align: center;
+  margin: 20px 0;
+  letter-spacing: 5px;
+}
+
+ .welcomecontent p{
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  margin-bottom: 15px;
+}
+
+.ctabtn,
+.ctabtnmobile{
+  border: none;
+  border-radius: 5px;
+  background-color:#dcd2ff;
+  color: #18132b;
+  font-size: 1.25em;
+  font-family: 'nexa_boldregular';
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.ctabtn{
+  padding: 10px 25px;
+}
+.ctabtnmobile{
+  padding: 10px 65px;
+}
+
+.aboutpg{
+  margin-bottom: 15px;
+}
+
+.ctabtn:hover,
+.ctabtnmobile:hover{
+  opacity: 0.5;
+ }
+
+ .learnmorebtn a{
+   transition: all 0.25s ease;
+   -webkit-transition: all 0.25s ease;
+   -moz-transition: all 0.25s ease;
+   font-size: 1.15em;
+   cursor: pointer;
+ }
+
+.learnmorebtn  i{
+  transition: transform 0.25s ease;
+  -webkit-transition: transform 0.25s ease;
+  -moz-transition: transform 0.25s ease;
+}
+
+
+.learnmorebtn a:hover i{
+  -webkit-transform: translateX(5px);
+  -moz-transform: translateX(5px);
+  -ms-transform: translateX(5px);
+  transform: translateX(5px);
+}
+
+
+/* ===========ABOUT PAGE=========================*/
+
+
+.logo a{
+  transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  cursor: pointer;
+}
+.logo a:hover{
+    opacity: 0.5;
+}
+
+/************ABOUT SECTION************/
+
+.aboutwrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 100px 0 50px 0;
+}
+
+.aboutcontent h1{
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.col {
+  padding: 0 30px;
+  margin-bottom: 30px;
+}
+
+.col h3{
+  font-family: 'nexa_boldregular';
+  margin-bottom: 10px;
+  font-size: 2.25em;
+}
+
+/************SOCIAL MEDIA SECTION************/
+
+/**horix lines that flank the text**/
+.socialheader{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.socialheader:before,
+.socialheader:after {
+    content: '';
+    border-top: 2px solid #dcd2ff;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+}
+.socialheader:after {
+    margin: 0 0 0 20px;
+}
+
+
+/**social media icons**/
+.socialicons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.grow{
+  display: inline-block;
+  font-size: 2.5em;
+  padding: 8px;
+  transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+}
+.grow:hover{
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+}
+
+
+
+
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+
+/* =======TABLET SIZE======================*/
+@media only screen and (min-width: 768px) {
+  header{
+    background: #353054;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .headerwrapper {
+    flex-flow: row nowrap;
+  }
+
+  .logo {
+    font-size: 2.5em;
+    font-family: 'Wallpoet', cursive;
+    margin: 0 50px 0 25px;
+    font-weight: normal;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  nav ul li {
+    padding: 0 25px;
+    display: inline;
+  }
+
+  nav ul li a {
+    transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+
+  }
+
+  nav ul li a:hover{
+    opacity: 0.6;
+  }
+
+  .login a {
+    transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+  }
+
+  .login a:hover{
+    opacity: 0.6;
+  }
+
+  .rightnav ul {
+    display: inline;
+  }
+
+
+  /************BG IMAGE***********
+
+  .bgimage p {
+    display: block;
+  }
+  .bgimage{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    font-size: 60em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-family: 'Wallpoet', cursive;
+    z-index: -1;
+    color: rgba(220, 210, 255, 0.1);
+  }*/
+
+  .logocase{
+    font-family: 'Wallpoet', cursive;
+    font-size: 1.125em;
+  }
+
+/************WELCOME SECTION************/
+
+  .sectionwrapper{
+    height: 50vh;
+    z-index:2;
+    margin: 150px auto;
+  }
+  .welcomecontent{
+    width: 90%;
+  }
+
+  .welcomecontent h3{
+    font-size: 2em;
+   }
+
+  .welcomecontent h1{
+    /*font-size: 4.5em;*/
+    margin: 35px 0;
+    animation-name: welcomeanim;
+    animation-duration: 5s;
+  }
+
+  @keyframes welcomeanim {
+    0% {
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+
+  .welcomecontent p{
+    font-size: 1.125em;
+    margin-bottom: 50px;
+  }
+
+  .ctabtn a{
+    background-color: #18132b;
+    color: #dcd2ff;
+    border: 2px solid #dcd2ff;
+    padding: 10px 25px;
+  }
+
+  .ctabtn a:hover{
+    background-color:#dcd2ff;
+    color: #18132b;
+    opacity: 0.8;
+   }
+
+
+  .ctabtnmobile,
+  .learnmorebtn {
+    display: none;
+  }
+
+  /************FOOTER************/
+
+  footer p{
+    font-size: 1em;
+  }
+
+}
+
+
+
+/* =======DESKTOP SIZE======================*/
+@media only screen and (min-width: 960px) {
+
+}
