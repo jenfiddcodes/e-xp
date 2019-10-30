@@ -769,6 +769,10 @@ textarea {
      margin-bottom: 50px;
    }
 
+   .aboutbuttons{
+     width:100%;
+   }
+
    .img-group{
         justify-content: space-around;
      }
