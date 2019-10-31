@@ -95,6 +95,7 @@ textarea {
    *{
      margin: 0;
      padding: 0;
+     box-sizing: border-box;
    }
 
    html,
@@ -210,30 +211,58 @@ textarea {
 
    /************HEADER************/
    header{
-     /*background: #18132b;*/
+     background: #353054;
      width: 100%;
+     font-size: 1em;
    }
 
    .headerwrapper {
      display: flex;
      justify-content: center;
      align-items: center;
-     flex-flow: column nowrap;
+     flex-flow: row nowrap;
    }
 
 
    .logo {
-     font-size: 8em;
+     font-size: 5em;
      font-family: 'Wallpoet', cursive;
-     margin: 0;
+     margin: 0 25px;
+     font-weight: normal;
    }
 
    nav {
      display: none;
    }
+
    .rightnav {
-     display: none;
+     width: 100%;
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
    }
+
+   .rightnav ul li{
+     padding: 0 25px;
+     display: inline;
+   }
+
+   .signupbtnnav{
+     font-weight: bold;
+     border: none;
+     border-radius: 5px;
+     background-color:#dcd2ff;
+     color: #18132b;
+     padding: 10px 15px;
+     transition: all 0.25s ease;
+     -webkit-transition: all 0.25s ease;
+     -moz-transition: all 0.25s ease;
+     cursor: pointer;
+   }
+
+   .signupbtnnav:hover{
+     opacity: 0.8;
+    }
 
    .bgimage p{
      display: none;
@@ -294,7 +323,7 @@ textarea {
    }
 
     .welcomecontent p{
-     font-size: 1em;
+     font-size: 1.125em;
      text-align: center;
      margin-bottom: 40px;
    }
@@ -347,14 +376,14 @@ textarea {
     }
 
    .learnmorebtn  i{
-     transition: transform 0.25s ease;
+     transition: transform 0.25s ease;/*this moves just the icon on hover*/
      -webkit-transition: transform 0.25s ease;
      -moz-transition: transform 0.25s ease;
    }
 
 
    .learnmorebtn a:hover i{
-     -webkit-transform: translateX(5px);
+     -webkit-transform: translateX(5px); /*this moves just the icon on hover*/
      -moz-transform: translateX(5px);
      -ms-transform: translateX(5px);
      transform: translateX(5px);
@@ -409,24 +438,56 @@ textarea {
      margin-top: 50px;
    }
 
-   .img-group{
+   .teamwrapper{
+     width: 100%;
      display: flex;
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
-     margin: 50px 0 50px 0;
+     margin: 50px 0;
    }
 
-   figure{
-     width: 90%;
+   .teamwrapper h1{
+     font-weight: 300;
+     margin-bottom: 50px;
+     width: 100%;
+     text-align: center;
    }
 
-   img{
+   .img-group{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+   }
+
+   .member{
+     margin: 0 15px 15px 0;
+   }
+
+   .member p{
+     text-align: center;
+     padding: 10px;
+   }
+
+   .circle{
+     border: 10px solid #353054;
      border-radius: 50%;
-     max-width: 100%;
-     height: 80%;
-     width: 80%;
-     object-fit: cover;
+     width: 350px;
+     height: 350px;
+     overflow: hidden;
+     position: relative;
+   }
+
+   .circle.pic1{
+     background: url('../img/team2.jpg') center center/cover no-repeat;
+   }
+   .circle.pic2{
+     background: url('../img/team1.jpg') center center/cover no-repeat;
+   }
+   .circle.pic3{
+     background: url('../img/team3.jpg') center center/cover no-repeat;
    }
 
    /************SOCIAL MEDIA SECTION************/
@@ -471,7 +532,7 @@ textarea {
      -moz-transition: all 0.25s ease;
    }
    .grow:hover{
-     transform: scale(1.5);
+     transform: scale(1.5);/*this makes icons grow on hover*/
      -webkit-transform: scale(1.5);
      -moz-transform: scale(1.5);
      -ms-transform: scale(1.5);
@@ -587,15 +648,9 @@ textarea {
        padding: 5px 0;
      }
 
-     .headerwrapper {
-       flex-flow: row nowrap;
-     }
-
      .logo {
-       font-size: 2.5em;
-       font-family: 'Wallpoet', cursive;
        margin: 0 50px 0 25px;
-       font-weight: normal;
+       font-size: 2.5em;
      }
 
      nav {
@@ -621,18 +676,6 @@ textarea {
        opacity: 0.6;
      }
 
-     .rightnav {
-       width: 100%;
-       display: flex;
-       justify-content: flex-end;
-       align-items: center;
-     }
-
-     .rightnav ul li{
-       padding: 0 25px;
-       display: inline;
-     }
-
 
      .login a {
        transition: all 0.25s ease;
@@ -644,22 +687,7 @@ textarea {
        opacity: 0.6;
      }
 
-     .signupbtnnav{
-       font-weight: bold;
-       border: none;
-       border-radius: 5px;
-       background-color:#dcd2ff;
-       color: #18132b;
-       padding: 10px 15px;
-       transition: all 0.25s ease;
-       -webkit-transition: all 0.25s ease;
-       -moz-transition: all 0.25s ease;
-       cursor: pointer;
-     }
 
-     .signupbtnnav:hover{
-       opacity: 0.8;
-      }
 
 
      /************BG IMAGE***********
@@ -683,20 +711,12 @@ textarea {
        color: rgba(220, 210, 255, 0.1);
      }*/
 
-     .logocase{
-       font-family: 'Wallpoet', cursive;
-       font-size: 1.125em;
-     }
-
    /************WELCOME SECTION************/
 
      .welcomewrapper{
        /*height: 50vh;
        z-index:2;*/
        margin: 150px auto;
-     }
-     .welcomecontent{
-       width: 90%;
      }
 
      .welcomecontent h3{
@@ -781,11 +801,13 @@ textarea {
    }
 
    .img-group{
-        justify-content: space-around;
-     }
+     justify-content: space-around;
+     flex-flow: row nowrap;
+   }
 
-   figure{
-     width: 30%;
+   .circle{
+     max-width: 250px;
+     max-height: 250px;
    }
 
    }
