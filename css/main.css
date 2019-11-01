@@ -243,12 +243,15 @@ textarea {
    }
 
    .rightnav ul li{
+     font-family: 'nexa_boldregular';
+     text-transform: uppercase;
      padding: 0 25px;
      display: inline;
    }
 
    .signupbtnnav{
-     font-weight: bold;
+     text-transform: uppercase;
+     font-family: 'nexa_boldregular';
      border: none;
      border-radius: 5px;
      background-color:#dcd2ff;
