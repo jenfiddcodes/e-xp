@@ -27,7 +27,7 @@
         <ul>
           <!--<li><a href="#profile">Profile</a></li> angel said to hold off on this option-->
           <li><a href="about/index.html">About</a></li>
-          <li><a href="#support">Support</a></li>
+          <li><a href="support/index.html">Support</a></li>
         </ul>
       </nav>
       <div class="rightnav">
@@ -43,28 +43,33 @@
     <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
   <form class="modal-content" action="/action_page.php">
+    <h1>REGISTER</h1>
     <div class="container">
-      <h1>Sign Up</h1>
-      <p>Please fill in this form to create an account.</p>
-      <hr>
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
 
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+      <label for="firstname"></label>
+      <input type="text" placeholder="FIRST NAME" name="firstname" required>
 
-      <label for="psw-repeat"><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      <label for="lastname"></label>
+      <input type="text" placeholder="LAST NAME" name="lastname" required>
+
+      <label for="email"></label>
+      <input type="text" placeholder="EMAIL" name="email" required>
+
+      <label for="psw"></label>
+      <input type="password" placeholder="PASSWORD" name="psw" required>
+
+      <label for="psw-repeat"></label>
+      <input type="password" placeholder="REPEAT PASSWORD" name="psw-repeat" required>
 
       <label>
-        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        <input type="checkbox" checked="checked" name="remember"> REMEMBER ME
+        <span class="checkmark"></span>
       </label>
 
-      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+      <p>By clicking "Create Account" you agree to our <a href="#">Terms & Privacy</a> and that you have read our <a href="#">Data Policy</a>, including our cookie use.</p>
 
-      <div class="clearfix">
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-        <button type="submit" class="signupbtn">Sign Up</button>
+      <div>
+        <button type="submit" class="signupbtn">CREATE ACCOUNT</button>
       </div>
     </div>
   </form>
@@ -82,10 +87,11 @@
          <h1>E-XP</h1>
          <p>E-XP is an employment oriented social network <br> where you can sieze opportunities<br> and gain experience as you go.</p>
          <div class="buttons">
-           <button class="ctabtn" type="button" onclick="">GET STARTED</button> <br>
+           <button class="ctabtn" type="button" onclick="document.getElementById('id01').style.display='inline'">GET STARTED</button> <br>
           <!--<button class="ctabtnmobile" type="button" onclick="">Sign In</button><!--for mobile version only-->
          </div>
          <p class="learnmorebtn"><a href="about/index.html">Learn More <i class="fas fa-angle-double-right"></i> </a></p><!--for mobile version only-->
+         <p class="getsupportbtn"><a href="support/index.html">Need Help? <i class="fas fa-angle-double-right"></i></a></p><!--for mobile version only-->
         </div>
       </div>
    </section>
