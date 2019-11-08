@@ -27,7 +27,7 @@
         <ul>
           <!--<li><a href="#profile">Profile</a></li> angel said to hold off on this option-->
           <li><a href="../about/index.html">About</a></li>
-          <li><a href="#support">Support</a></li>
+          <li><a href="../support/index.html">Support</a></li>
         </ul>
       </nav>
       <div class="rightnav">
@@ -38,6 +38,42 @@
       </div>
      </div>
     </header>
+
+    <!--SIGN UP FORM HTML ONLY--------------------------------------------------------------->
+        <div id="id01" class="modal">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <form class="modal-content" action="/action_page.php">
+        <h1>REGISTER</h1>
+        <div class="container">
+
+          <label for="firstname"></label>
+          <input type="text" placeholder="FIRST NAME" name="firstname" required>
+
+          <label for="lastname"></label>
+          <input type="text" placeholder="LAST NAME" name="lastname" required>
+
+          <label for="email"></label>
+          <input type="text" placeholder="EMAIL" name="email" required>
+
+          <label for="psw"></label>
+          <input type="password" placeholder="PASSWORD" name="psw" required>
+
+          <label for="psw-repeat"></label>
+          <input type="password" placeholder="REPEAT PASSWORD" name="psw-repeat" required>
+
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> REMEMBER ME
+          </label>
+
+          <p>By clicking "Create Account" you agree to our <a href="#">Terms & Privacy</a> and that you have read our <a href="#">Data Policy</a>, including our cookie use.</p>
+
+          <div>
+            <button type="submit" class="signupbtn">CREATE ACCOUNT</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!--END--------------------------------------------------------------->
 
 <main>
 
@@ -64,8 +100,9 @@
          </div>
 
          <div class="buttons aboutbuttons">
-           <button class="ctabtn aboutpg" type="button" onclick="">GET STARTED</button>
+           <button class="ctabtn aboutpg" type="button" onclick="document.getElementById('id01').style.display='inline'">GET STARTED</button>
            <!--<button class="ctabtnmobile" type="button" onclick="">LOG IN</button>for mobile version only-->
+<p class="getsupportbtn"><a href="../support/index.html">Need Help? <i class="fas fa-angle-double-right"></i></a></p><!--for mobile version only-->
          </div>
 
         </div>
@@ -124,5 +161,16 @@
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
   <script src="https://kit.fontawesome.com/2b2b1263ed.js" crossorigin="anonymous"></script>
+  <!------------------------JS for the sign up form--------------------------->
+  <script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
 </body>
 </html>
