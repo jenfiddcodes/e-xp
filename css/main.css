@@ -133,7 +133,7 @@ textarea {
      margin-bottom: 15px;
      display: inline-block;
      border: none;
-     border-radius: 0;
+     outline:none;
      border-bottom: 2px solid #dcd2ff;
      background-color: #18132b;
      color: #dcd2ff;
