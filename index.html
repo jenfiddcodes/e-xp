@@ -23,82 +23,80 @@
         <div class="logo">
           <p>X</p>
         </div>
-        <nav>
-        <ul>
-          <!--<li><a href="#profile">Profile</a></li> angel said to hold off on this option-->
-          <li><a href="about/index.html">About</a></li>
-          <li><a href="support/index.html">Support</a></li>
-        </ul>
-      </nav>
-      <div class="rightnav">
-        <ul>
-          <li class="login"><a href="">Log In</a></li>
-          <li><button class="signupbtnnav" onclick="document.getElementById('id01').style.display='inline'">Sign Up</button></li>
-        </ul>
-      </div>
+        <nav class="rightnav">
+          <ul>
+            <li class="login"><a href="login/index.html">Log In</a></li>
+            <li><button class="signupbtnnav" onclick="document.getElementById('id01').style.display='inline'">Sign Up</button></li>
+          </ul>
+        </nav>
      </div>
     </header>
 
 <!--SIGN UP FORM HTML ONLY--------------------------------------------------------------->
-    <div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-  <form class="modal-content" action="/action_page.php">
-    <h1>REGISTER</h1>
-    <div class="container">
+  <div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <form class="modal-content" action="/action_page.php">
+      <h1>REGISTER</h1>
+      <div class="container">
 
-      <label for="firstname"></label>
-      <input type="text" placeholder="FIRST NAME" name="firstname" required>
+        <label for="firstname"></label>
+        <input type="text" placeholder="FIRST NAME" name="firstname" required>
 
-      <label for="lastname"></label>
-      <input type="text" placeholder="LAST NAME" name="lastname" required>
+        <label for="lastname"></label>
+        <input type="text" placeholder="LAST NAME" name="lastname" required>
 
-      <label for="email"></label>
-      <input type="text" placeholder="EMAIL" name="email" required>
+        <label for="email"></label>
+        <input type="email" placeholder="EMAIL" name="email" required>
 
-      <label for="psw"></label>
-      <input type="password" placeholder="PASSWORD" name="psw" required>
+        <label for="psw"></label>
+        <input type="password" placeholder="PASSWORD" name="psw" required>
 
-      <label for="psw-repeat"></label>
-      <input type="password" placeholder="REPEAT PASSWORD" name="psw-repeat" required>
+        <label for="psw-repeat"></label>
+        <input type="password" placeholder="REPEAT PASSWORD" name="psw-repeat" required>
 
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> REMEMBER ME
-        <span class="checkmark"></span>
-      </label>
+        <input type="checkbox" checked="checked" name="remember">
+        <label class="checktext">REMEMBER ME</label>
 
-      <p>By clicking "Create Account" you agree to our <a href="#">Terms & Privacy</a> and that you have read our <a href="#">Data Policy</a>, including our cookie use.</p>
+        <p class="disclaimer">By clicking "Create Account" you agree to our <a href="#">Terms & Privacy</a> and that you have read our <a href="#">Data Policy</a>, including our cookie use.</p>
 
-      <div>
-        <button type="submit" class="signupbtn">CREATE ACCOUNT</button>
+        <div>
+          <button type="submit" class="signupbtn">CREATE ACCOUNT</button>
+        </div>
       </div>
-    </div>
-  </form>
-</div>
+    </form>
+  </div>
 <!--END--------------------------------------------------------------->
 <main>
-  <!------------------------faded logo bg?-------------------------
-   <div class="bgimage"><p>X</p></div>-->
+  <!------------------------faded logo bg------------------------->
+   <div class="bgimage"><p>X</p></div>
   <!------------------------WELCOME--------------------------->
    <section class="welcome">
      <div class="welcomewrapper">
        <div class="welcomecontent">
          <h3>GRIND TO<strong> YOUR </strong> HIGHEST LEVEL</h3>
-         <h2>WELCOME TO</h2>
-         <h1>E-XP</h1>
-         <p>E-XP is an employment oriented social network <br> where you can sieze opportunities<br> and gain experience as you go.</p>
+         <h1>WELCOME TO E-XP</h1>
+         <p>E-XP is an employment oriented social network <br> where you can sieze opportunities and gain experience as you go.</p>
          <div class="buttons">
            <button class="ctabtn" type="button" onclick="document.getElementById('id01').style.display='inline'">GET STARTED</button> <br>
           <!--<button class="ctabtnmobile" type="button" onclick="">Sign In</button><!--for mobile version only-->
          </div>
-         <p class="learnmorebtn"><a href="about/index.html">Learn More <i class="fas fa-angle-double-right"></i> </a></p><!--for mobile version only-->
-         <p class="getsupportbtn"><a href="support/index.html">Need Help? <i class="fas fa-angle-double-right"></i></a></p><!--for mobile version only-->
         </div>
       </div>
    </section>
 </main>
 <!------------------------FOOTER--------------------------->
    <footer>
-     <p>Copyright &copy; 2019. All rights reserved.</p>
+     <div class="footerwrapper">
+      <div class="footernav">
+       <ul>
+         <li class="learnmorebtn"><a href="about/index.html">Learn More <i class="fas fa-angle-double-right"></i></a></li>
+         <li class="getsupportbtn"><a href="support/index.html">Need Help? <i class="fas fa-angle-double-right"></i></a></li>
+       </ul>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2019. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
 
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
