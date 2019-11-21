@@ -106,7 +106,7 @@ textarea {
 
 
    body{
-     color: #18132b;
+     color: #353054;
      background: #efefef;
      font-size: 16px;
      font-family: 'nexa_lightregular', sans-serif;
@@ -123,76 +123,94 @@ textarea {
      list-style-type: none;
    }
 
+   *:focus {
+    outline: none;
+  }
+
+
    /* =========================SIGN UP FORM STYLES==================================== */
    /* Full-width input fields */
    .container input[type=text],
-   .container input[type=password],
-   .container input[type=email] {
+   .container input[type=password] {
      width: 100%;
      padding: 10px;
      margin-bottom: 15px;
      display: inline-block;
      border: none;
-     outline:none;
-     border-bottom: 2px solid #dcd2ff;
-     background-color: #18132b;
-     color: #dcd2ff;
+     border-radius: 0;
+     border-bottom: 2px solid #353054;
+     background-color: #efefef;
+     color: #353054;
      font-family: 'nexa_boldregular';
    }
 
+   .name-signup{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+   }
 
    /* Add a background color when the inputs get focus*/
    .container input[type=text]:focus,
-   .container input[type=password]:focus,
-   .container input[type=email]:focus {
-     background-color: #18132b;
-     outline: none;
-     color: #dcd2ff;
+   .container input[type=password]:focus {
+     background-color: #efefef;
+     color: #353054;
+   }
+
+   .container ::placeholder{
+     color: rgba(53, 48, 84, 0.5);
    }
 
    .checktext{
-     color: #dcd2ff;
+     color: #353054;
      font-size: .85em;
+     font-family: 'nexa_boldregular';
+     padding-left: 5px;
    }
 
    /* Float cancel and signup buttons and add an equal width */
    .signupbtn {
-     width: 75%;
-     background-color: #dcd2ff;
+     width: 100%;
+     background-color: #353054;
      border-radius: 10px;
      border: none;
-     color: #18132b;
+     color: #efefef;
      font-family: 'nexa_boldregular';
      font-size: 1em;
      padding: 10px 15px;
      margin-top: 20px;
      transition: all 0.5s ease;
-     -webkit-transition: all 0.5s ease;
-     -moz-transition: all 0.5s ease;
+     letter-spacing: 2px;
    }
 
    .signupbtn:hover{
-      opacity: 0.5;
+      opacity: 0.8;
    }
 
    /* Add padding to container elements */
    .container {
-     background-color: #18132b;
-     /*border: 5px solid #dcd2ff;*/
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+     background-color: #efefef;
+     border-radius: 10px;
      box-shadow: 0px 0px 20px 15px rgba(78, 62, 142, 0.2);
-     padding: 30px;
-     text-align: center;
+     padding: 20px;
    }
 
    .disclaimer {
-     color: #dcd2ff;
+     color: #353054;
      font-size: .75em;
      text-align: center;
      margin-top: 20px;
+     line-height: 1.25em;
    }
 
    .disclaimer a {
-     color: #dcd2ff;
+     color: #353054;
      text-decoration: underline;
      font-weight: bold;
    }
@@ -201,7 +219,7 @@ textarea {
    .modal-content h1{
      font-size: 1.75em;
      text-align: center;
-     color: #18132b;
+     color: #efefef;
      font-family: 'nexa_boldregular';
      padding: 0;
      margin: 0;
@@ -217,14 +235,15 @@ textarea {
      width: 100%; /* Full width */
      height: 100%; /* Full height */
      overflow: auto; /* Enable scroll if needed */
-     background-color: rgba(24, 19, 43, 0.8);
+     background-color: rgba(53, 48, 84, 0.9);
      padding-top: 50px;
    }
 
    /* Modal Content/Box */
    .modal-content {
-     background-color: #dcd2ff;
-     border: 3px solid #dcd2ff;
+     background-color: #353054;
+     border: 8px solid #353054;
+     border-radius: 10px;
      margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
      width: 90%; /* Could be more or less, depending on screen size */
    }
@@ -233,16 +252,17 @@ textarea {
    .close {
      position: absolute;
      right: 35px;
-     top: 15px;
-     font-size: 40px;
-     font-weight: bold;
+     top: 35px;
+     font-size: 50px;
+     font-family: 'nexa_boldregular';
      color: #dcd2ff;
    }
 
    .close:hover,
    .close:focus {
-     color: #18132b;
+     opacity: 0.8;
      cursor: pointer;
+     outline: none;
    }
 
 
@@ -306,7 +326,7 @@ textarea {
      border: none;
      border-radius: 10px;
      background-color:#efefef;
-     color: #18132b;
+     color: #353054;
      padding: 5px 15px;
      transition: all 0.25s ease;
      -webkit-transition: all 0.25s ease;
@@ -343,7 +363,7 @@ textarea {
    }
 
    .footernav ul li a{
-     color: #18132b;
+     color: #353054;
      font-family: 'nexa_boldregular';
      text-transform: uppercase;
    }
@@ -421,7 +441,7 @@ textarea {
    }
 
    .buttons{
-    display: flex;
+     display: flex;
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
@@ -430,16 +450,14 @@ textarea {
 
    .ctabtn,
    .ctabtnmobile{
+     background-color: transparent;
      border: none;
      border-radius: 10px;
-     background-color:#18132b;
-     box-shadow: 0px 8px 15px rgba(78, 62, 142, 0.4);
-     color: #dcd2ff;
+     border: 3px solid #353054;
+     color: #353054;
      font-size: 1.5em;
      font-family: 'nexa_boldregular';
      transition: all 0.3s ease 0s;
-     -webkit-transition: all 0.3s ease 0s;
-     -moz-transition: all 0.3s ease 0s;
      cursor: pointer;
      margin: 0 15px 15px 0;
    }
@@ -578,7 +596,7 @@ textarea {
    .socialheader:before,
    .socialheader:after {
        content: '';
-       border-top: 2px solid #18132b;;
+       border-top: 2px solid #353054;;
        margin: 0 20px 0 0;
        flex: 1 0 20px;
    }
@@ -597,7 +615,7 @@ textarea {
    }
 
    .grow a{
-     color: #18132b;
+     color: #353054;
    }
 
    .grow{
@@ -637,53 +655,57 @@ textarea {
     .form-header{
       text-align: center;
       width: 100%;
-      color: #18132b;
+      color: #353054;
       margin-bottom: 25px;
     }
     .form-header h2{
       font-family: 'nexa_boldregular';
-      font-size: 3em;
+      font-size: 2.5em;
+      text-transform: uppercase;
     }
 
 
-    input[type=text], input[type=email] {
+    .form-wrapper input[type=text],
+    .form-wrapper input[type=email] {
       background-color: #efefef;
       border: none;
-      border-bottom: 1.5px solid #18132b;
+      border-bottom: 1.5px solid #353054;
       font-family: 'nexa_boldregular';
       padding: 15px;
       margin: 5px;
       width:100%;
-      color: #18132b;
+      color: #353054;
     }
 
-      ::placeholder{
+    .form-wrapper ::placeholder{
         color: #353054;
       }
 
-    input[type=text]:focus, input[type=email]:focus{
+    .form-wrapper input[type=text]:focus,
+    .form-wrapper input[type=email]:focus{
       background-color: #efefef;
-      color: #18132b;
+      color: #353054;
     }
 
     textarea{
       font-family: 'nexa_boldregular';
       background-color: #efefef;
       border: none;
-      border-bottom: 1.5px solid #18132b;
-      color: #18132b;
+      border-bottom: 1.5px solid #353054;
+      color: #353054;
       padding: 15px;
       margin: 5px;
       width:100%;
     }
 
 
-    input[type=submit], input[type=reset]{
+    .buttons input[type=submit],
+    .buttons input[type=reset]{
       border: none;
-      border: 2px solid #18132b;
+      border: 2px solid #353054;
       border-radius: 10px;
       background-color:#efefef;
-      color: #18132b;
+      color: #353054;
       font-size: 1.25em;
       font-family: 'nexa_boldregular';
       font-weight: 700;
@@ -695,9 +717,10 @@ textarea {
       -webkit-transition: all 0.5s ease;
       -moz-transition: all 0.5s ease;
     }
-    input[type=submit]:hover, input[type=reset]:hover{
-      background-color:#18132b;
-      color: #dcd2ff;
+    .buttons input[type=submit]:hover,
+    .buttons input[type=reset]:hover{
+      background-color:#353054;
+      color: #efefef;
     }
 
 
@@ -714,7 +737,7 @@ textarea {
     }
 
     .login-wrapper{
-      width: 90%;
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -726,12 +749,33 @@ textarea {
     .login-wrapper input[type=password]  {
       background-color: #efefef;
       border: none;
-      border-bottom: 1.5px solid #18132b;
+      border-bottom: 1.5px solid #353054;
       font-family: 'nexa_boldregular';
       padding: 15px;
       margin: 15px;
       width:100%;
-      color: #18132b;
+      color: #353054;
+    }
+
+    .login-credentials{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column  nowrap;
+      flex-basis: 80%;
+    }
+
+    .login-checkbox{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row  nowrap;
+      flex-basis: 80%;
+      margin-bottom: 15px;
+    }
+
+    .login-checkbox label{
+      padding-left: 5px;
     }
 
     .login-links p{
@@ -745,7 +789,7 @@ textarea {
 
     .login-links a {
       font-family: 'nexa_boldregular';
-      color: #18132b;
+      color: #353054;
       transition: all 0.5s ease;
       -webkit-transition: all 0.5s ease;
       -moz-transition: all 0.5s ease;
@@ -865,6 +909,20 @@ textarea {
        width: 60%; /* Could be more or less, depending on screen size */
      }
 
+     .name-signup{
+      width: 100%;
+      justify-content: space-between;
+      flex-flow: row wrap;
+     }
+
+     .name-signup input[type=text]{
+       width: 49%;
+     }
+
+     .disclaimer {
+       line-height: 1.75em;
+     }
+
 
      /************HEADER SECTION************/
      header{
@@ -957,12 +1015,6 @@ textarea {
        font-size: 1.75em;
      }
 
-     .ctabtnmobile,
-     .learnmorebtn,
-     .getsupportbtn {
-       display: none;
-     }
-
      /************FOOTER************/
 
      footer{
@@ -1011,7 +1063,7 @@ textarea {
 
    .form-wrapper{
      background-color: #efefef;
-     border: 5px solid #18132b;
+     border: 5px solid #353054;
      border-radius: 10px;
     /* box-shadow: 0px 0px 20px 15px rgba(78, 62, 142, 0.2);*/
      padding: 30px;
@@ -1031,8 +1083,17 @@ textarea {
 
    /**log-in section**/
    .login-wrapper{
-     max-width: 60%;
+     max-width: 75%;
    }
+
+   .login-credentials{
+     flex-basis: 100%;
+   }
+
+   .login-checkbox{
+     flex-basis: 100%;
+   }
+
 
    }
 
@@ -1042,12 +1103,6 @@ textarea {
    @media only screen and (min-width: 960px) {
 
      /* ===========SIGN UP FORM STYLES========= */
-     .container input[type=text]{
-       width: 45%;
-     }
-     .container input[type=password], .container input[type=email]{
-       width: 100%;
-     }
 
      .container ::placeholder{
        font-size: 1.25em;
